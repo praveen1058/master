@@ -1,0 +1,37 @@
+INCREASE EBS ROOT VOLUME OF EC2
+We can easily increase root volume of ebs on AWS .
+1)First login on AWS Account and Search EC2.
+
+ 
+2) Select instance and click on storage 
+ 
+ 
+3) Take backup of volume before modify for safer side
+Select volume and go to action and then click on snapshot
+ 
+4)Select Volume and go to modify volume under Action button 
+
+ 
+ 
+5) Changed required volume size and click on modify.
+ 
+6)Wait until optimizing 100% and in-use status 
+ 
+7) Connect ec2 using putty or terminal or power shell
+and run command - 
+# lsblk
+ 
+8) We can check modification is show on above screenshot but not mounted, Run next command
+#sudo growpart /dev/xvda 1
+#lsbk
+ 
+9) check file system of exiting volume using this command
+# file -s /dev/xvd*
+ 10) In our case XFS file system is here. run command
+# xfs_growfs -d /
+ If you were using an ext4 (or even older ext2 or ext3) file system, you could extend it using the “resize2fs /dev/xvda1” command.
+ 
+ 
+ 
+Thanks for Reading-
+Praveen Kumar 
