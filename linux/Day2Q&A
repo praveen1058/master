@@ -8,3 +8,7 @@ Task: What is the linux command to
     #ls -a
     Create a nested directory A/B/C/D/E
     #mkdir -p A/B/C/D/E
+
+Resource -
+https://phoenixnap.com/kb/linux-commands-cheat-sheet
+https://www.youtube.com/watch?v=39oyFIStuaI&list=PLlfy9GnSVerQr-Se9JRE_tZJk3OUoHCkh
