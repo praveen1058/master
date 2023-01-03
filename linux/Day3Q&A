@@ -12,9 +12,11 @@ Task: What is the linux command to
     # rmdir directoryname
     # rm -r directoryname
     To create a fruits.txt file and to view the content.
-    
-    
+    # touch fruits.txt
+    # cat fruits.txt
     Add content in devops.txt (One in each line) - Apple, Mango, Banana, Cherry, Kiwi, Orange, Guava.
+    #vim fruits.txt
+    press i for insert and type all content
     To Show only top three fruits from the file.
     # cat fruits.txt | head -3
     # head -3 fruit.txt
@@ -22,5 +24,10 @@ Task: What is the linux command to
     #cat fruit.txt | tail -3
     #tail -3 fruit.txt
     To create another file Colors.txt and to view the content.
+    # touch colors.txt
+    # cat colors.txt
     Add content in Colors.txt (One in each line) - Red, Pink, White, Black, Blue, Orange, Purple, Grey.
+    # vim colors.txt
+    click i for insert and type content and then esc :wq!
     To find the difference between fruits.txt and Colors.txt file.
+    # diff fruits.txt colors.txt
