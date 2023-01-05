@@ -1,0 +1,82 @@
+           SHELL SCRIPTING
+
+A shell script is a list of commands in a computer program that is run by the Unix shell which is a command line interpreter.
+ SHELL
+
+Shell accept human readable commands from user and convert them into something which kernel can understand.
+KERNEL
+
+A kernel is the lowest level of software that can interface with computer hardware. All Linux applications and servers also interface with the Linux kernel. 
+
+ 
+ What is #!/bin/bash? can we write #!/bin/sh as well?
+
+ The first line of the shell script file begins with a "sha-bang" (#!) which is not read as a comment, followed by the full path where the shell interpreter is located.
+
+ The main function of a shell is to interpret the UNIX commands given by the user. Unix consists of numerous shells out of that bash is one of them that is widely used. It is the default shell assigned by Linux-based operating systems.
+
+#!/bin/sh :Executes the script using the Bourne shell or a compatible shell, with path /bin/sh
+
+#!/bin/bash :Executes the script using the Bash shell.
+
+ 
+Write a Shell Script which prints I will complete #90DaysOofDevOps challenge
+
+
+#!/bin/bash
+
+echo "I will complete #90DaysOofDevOps challenge"
+
+ 
+Write a Shell Script to take user input, input from arguments and print the variables.
+
+#!/bin/bash
+
+echo "Hello Please Enter your name"
+
+
+read name
+
+
+echo "Thank you ${name} "
+
+
+#echo "please enter your age as an argument"
+
+
+echo "your age is $1 "
+
+ 
+ Write an Example of If else in Shell Scripting by comparing 2 numbers
+ 
+
+#!bin/bash
+
+echo "Please enter First Number"
+read num1
+echo "Please enter Second Number"
+read num2
+if [ $num1 -gt $num2 ]
+then
+    echo "$num1 is greater than $num2"
+elif [ $num1 -eq $num2 ]
+then
+    echo "$num1 is equal to $num2"
+else
+    echo "$num2 is greater than $num1"
+fi
+
+ 
+
+Reference:-
+
+https://www.learnshell.org/
+
+
+
+
+ 
+
+ 
+
+ 
