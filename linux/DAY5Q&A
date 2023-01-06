@@ -1,0 +1,32 @@
+SHELL SCRIPT, CRONTAB, USER MANAGEMENT
+
+SHELL SCRIPT
+
+A shell script is a list of commands in a computer program that is run by the Unix shell which is a command line interpreter.
+
+CRONTAB
+
+Cron is the system's main scheduler for running jobs or tasks unattended. A command called crontab allows the user to submit, edit or delete entries to cron. A crontab file is a user file that holds the scheduling information.
+
+USER MANAGEMENT
+
+A user is an entity, in a Linux operating system, that can manipulate files and perform several other operations. Each user is assigned an ID that is unique for each user in the operating system.
+
+
+
+Here, We will create some script using loop to create some files and directories. As a DevOps Engineer, we create this type of task.
+
+
+Example-
+
+1. Creates some files using Shell Script i.e using either Loops or arguments.
+
+#!/bin/bash
+for n in {1..5};
+do
+    mkdir movie$n
+done
+
+2. Create a Script to backup all your work done till now.
+
+* * * * * tar -zcf /home/dev/script.tgz /home/dev/script
