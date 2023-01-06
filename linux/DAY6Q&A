@@ -1,0 +1,63 @@
+         FILE OWNERSHIP AND PERMISSION
+
+
+Linux is the multi-user operating system which can be accessed by many users simultaneously.
+
+
+
+Linux divides authorization into 2 levels.
+
+Ownership
+Permission
+ 
+
+Every file and directory on your Unix/Linux system is assigned 3 types of owners, given below.
+
+1) USER
+
+2) GROUP
+
+3) OTHER
+
+We can change ownership permissions using chown commands and for change group , we use chgrp command.
+
+# chown username file/directory
+
+#chgrp groupname file/directory
+
+
+Every file and directory in your UNIX/Linux system has following 3 permissions defined for all the 3 owners discussed above.
+
+1) READ
+2) WRITE
+3) Execute
+
+We can change permission on file using chmod.
+
+# chmod 500 filename
+#chmod 777 filename
+
+read-4
+write-2
+execute-1
+
+
+What is ACL ?
+Access control list (ACL) provides an additional, more flexible permission mechanism for file systems. It is designed to assist with UNIX file permissions. ACL allows you to give permissions for any user or group to any disc resource.
+
+1) To add permission for user
+setfacl -m "u:user:permissions" /path/to/file
+
+2) To add permissions for a group
+setfacl -m "g:group:permissions" /path/to/file 
+
+
+
+Resource-
+https://www.guru99.com/file-permissions.html
+https://www.geeksforgeeks.org/access-control-listsacl-linux/
+
+
+
+
+
