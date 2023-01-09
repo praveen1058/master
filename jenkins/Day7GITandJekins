@@ -1,0 +1,32 @@
+How to Install GIT (Ubuntu 20.04)-
+
+
+Git installation on ubuntu is very easy(Only 3 command)
+
+1) Sudo apt update -y 
+
+Update the system 
+
+2) sudo apt install git 
+
+install the git 
+
+3) git --version
+
+check the git version after installation 
+
+
+ How to Install Jenkins (Ubuntu 20.04)-
+ 
+
+    sudo apt-get update
+
+    sudo apt-get install openjdk-11-jdk
+
+    wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+
+    sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+    sudo apt-get update
+
+    sudo apt-get install jenkins
