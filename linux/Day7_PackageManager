@@ -1,0 +1,51 @@
+A package manager is a tool that allows users to install, remove, upgrade, configure and manage software packages on an operating system. 
+
+ 
+
+ 
+1. DPKG – Debian Package Management System
+
+Dpkg is a base package management system for the Debian Linux family, it is used to install, remove, store and provide information about .deb packages.
+
+ 
+APT (Advanced Packaging Tool)
+
+It is a very popular, free, powerful and more so, useful command line package management system that is a front end for dpkg package management system.
+
+ 
+Aptitude Package Manager
+
+This is also a popular command line front-end package management tool for Debian Linux family, it works similar to APT and there have been a lot of comparisons between the two, but above all, testing out both can make you understand which one actually works better.
+Synaptic Package Manager
+
+Synaptic is a GUI package management tool for APT based on GTK+ and it works fine for users who may not want to get their hands dirty on a command line. It implements the same features as apt-get command line tool.
+
+ 
+2. RPM (Red Hat Package Manager)
+
+This is the Linux Standard Base packing format and a base package management system created by RedHat. Being the underlying system, there several front-end package management tools that you can use with it and but we shall only look at the best and that is:
+YUM (Yellowdog Updater, Modified)
+
+It is an open source and popular command line package manager that works as a interface for users to RPM. You can compare it to APT under Debian Linux systems, it incorporates the common functionalities that APT has. 
+
+ 
+DNF – Dandified Yum
+
+It is also a package manager for the RPM-based distributions, introduced in Fedora 18 and it is the next generation of version of YUM.
+
+ 
+3. Pacman Package Manager – Arch Linux
+
+It is a popular and powerful yet simple package manager for Arch Linux and some little known Linux distributions, it provides some of the fundamental functionalities that other common package managers provide including installing, automatic dependency resolution, upgrading, uninstalling and also downgrading software.
+4. Zypper Package Manager – openSUSE
+
+It is a command line package manager on OpenSUSE Linux and makes use of the libzypp library, its common functionalities include repository access, package installation, resolution of dependencies issues and many more.
+
+ 
+5. Portage Package Manager – Gentoo
+
+It is a package manager for Gentoo, a less popular Linux distribution as of now, but this won’t limit it as one of the best package managers in Linux.
+ 
+ 
+Resource-
+https://www.tecmint.com/ 
