@@ -1,0 +1,23 @@
+ 
+
+service is an "high-level" command used for starting and stopping services in different unixes and linuxes. Depending on the "lower-level" service manager, service redirects on different binaries.
+
+For example, on CentOS 7 it redirects to systemctl, while on CentOS 6 it directly calls the relative /etc/init.d script. On the other hand, in older Ubuntu releases it redirects to upstart
+
+service is adequate for basic service management, while directly calling systemctl give greater control options.
+
+ 
+
+ 
+
+systemctl is basically a more powerful version of service.
+
+With service you can only do commands related to the service (i.e. status, reload, restart) whereas with systemctl you can use more advanced commands such as:
+
+systemctl is-failed name.service # check if service failed to load
+
+Or masking services:
+
+systemctl mask name.service
+
+ 
