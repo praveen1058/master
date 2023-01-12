@@ -1,0 +1,69 @@
+Deep Dive in Git & GitHub
+GIT-  
+
+Git is an open-source distributed version control system. It is designed to handle minor to major projects with high speed and efficiency. 
+Why we should use it ?
+
+ Two main advantages of using Git at software development:
+
+    Tracking the changes and updates. We are able to see who made which changes. Git also provides when and why a change was made.
+    Allowing to work collaboratively. Software development projects usually require many people to work together. Git provides the developers with a systematic way of doing that. Thus, the developers focus on the project instead of extensive communication sessions between the other developers.
+
+ 
+ GIT vs GITHUB
+
+Simply put, Git is a version control system that lets you manage and keep track of your source code history. GitHub is a cloud-based hosting service that lets you manage Git repositories. If you have open-source projects that use Git, then GitHub is designed to help you better manage them.  
+
+ 
+ How do you create a new repository on GitHub?
+
+    In the upper-right corner of any page, use the drop-down menu, and select New repository.
+    Type a short, memorable name for your repository. ...
+    Optionally, add a description of your repository. ...
+    Choose a repository visibility. ...
+    Select Initialize this repository with a README.
+    Click Create repository.
+
+What is difference between local & remote repository?
+
+Local repositories reside on the computers of team members. In contrast, remote repositories are hosted on a server that is accessible for all team members
+ How to connect local to remote?
+git remote add <name> <repository url>
+
+    Add: To add a new URL to the repository.
+    Name: To give a name that you will use instead of the URL of the repository.
+    URL: The URL of the repository. 
+
+ Set your user name and email address, which will be associated with your commits.
+
+    Open the command line.
+    Set your username: git config --global user.name "FIRST_NAME LAST_NAME"
+    Set your email address: git config --global user.email "MY_NAME@example.com"
+
+ Create a repository named "Devops" on GitHub
+ 
+
+    In the upper-right corner of any page, use the drop-down menu, and select New repository.
+    Type a  github name for repository name
+    Optionally, add a description of your repository. ...
+    Choose a repository visibility. ...
+    Select Initialize this repository with a README.
+    Click Create repository.
+
+Connect your local repository to the repository on GitHub.
+git remote add <name> <repository url> 
+Create a new file in Devops/Git/Day-02.txt & add some content to it
+Push your local commits to the repository on GitHub
+
+mkdir Git
+
+cd Git
+
+touch Day-02.txt
+
+git add .
+
+git  commit -m "first commit"
+
+ git push origin main
+
