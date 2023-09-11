@@ -1,0 +1,19 @@
+pwd - present working directory
+ls - list
+uname - name of kernal(OS)
+uname -r -version of kernal
+cd - change directory
+clear - clear screen
+whoami - currently login user
+history - previously used command
+date - date and time
+mkdir praveen - create single directory
+mkdir praveen rajeev - create multiple direcory
+mkdir -p praveen/rajjev/sohan - create directory inside direcory
+mkdir student{1..10}  -create no. of directory
+touch file1 - create empty file
+touch file1 file2 - create multiple file
+touch file{1..10} - create no. of file
+cp <source> <destination>  - copy file and paste it
+rm -rf /india/pune - remove file and directory
+mv dev devops - for rename file or directory
