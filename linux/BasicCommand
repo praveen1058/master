@@ -31,5 +31,11 @@ gpasswd -a ajay ibmgrp - to add single user in group
 gpasswd -M rahul,vijay,sohan ibmgrp  - to add multple user in group
 gpasswd -d vijay ibmgrp - to remove user from group
 gpasswd -A sachin ibmgrp - to make group admin
-
+ls -l file1 - to check file permission
+ls -ld dir1 - to check directory permission
+chmod u+r file1
+chmod 400 file1
+r -read w- write x- exute, 4 -read , 2- write 1- exute
+chown praveen file1 - change ownership
+chgrp ibmgrp notes.txt
  
