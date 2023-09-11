@@ -17,3 +17,19 @@ touch file{1..10} - create no. of file
 cp <source> <destination>  - copy file and paste it
 rm -rf /india/pune - remove file and directory
 mv dev devops - for rename file or directory
+useradd praveen - create user
+grep praveen /etc/passwd - to check property of user
+passwd praveen - to set user password
+su praveen -  switch user
+exit - to logout from user account
+userdel praveen - to delete user account
+usermod -l abhiman praveen
+groupadd ibmgrp
+grep ibmgrp /etc/group - to check property of group
+groupdel ibmgrp - to delete group
+gpasswd -a ajay ibmgrp - to add single user in group
+gpasswd -M rahul,vijay,sohan ibmgrp  - to add multple user in group
+gpasswd -d vijay ibmgrp - to remove user from group
+gpasswd -A sachin ibmgrp - to make group admin
+
+ 
