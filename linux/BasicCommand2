@@ -1,2 +1,24 @@
 getfacl /devops - to check ACL permsission
+setfacl -m u:praveen:rwx /devops  to set ACL permission to user
+setfacl -x u:praveen: /devops  to remove ACL permission of user
+setfacl -m g:ibmgrp:rwx /devops to set ACl permssion to group
+setfacl -x g:ibmgrp: /devops to remove acl permssion of group
+setfacl -b /devops for remove all ACL permsiion
+grep root /etc/passwd - search a word in file
+grep root /etc/passwd /etc/group -search a word in multiple file
+grep -i Root /etc/passwd -search a string insensitive in file
+grep -r root / - search a string in all file recursively
+grep -v root /etc/passwd - inverting the string match
+grep -c root /etc/passwd - displaying the string match total line no.
+grep -l root /etc/passwd /etc/shadow - display the file names that matches the string
+grep -L root /etc/passwd /etc/shadow display the file name that do not conatain string
+grep -n root /etc/passwd - display the string match line with number
+grep ^root /etc/passwd - display the line that start with string
+grep /bin/bash$ /etc/passwd -display the line that end with string
+grep root /etc/passwd > /mnt/find.txt - search and redirect output to new file
+
+find /home -name file1.txt - find a file in home directory
+find / -prem 4755 -find files with suid permission
+find / -prem 2644  - find files with guid permission
+
 
