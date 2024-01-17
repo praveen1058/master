@@ -18,16 +18,17 @@ A container is a bundle of Application, Application libraries required to run yo
 4. Management: Managing containers is typically easier than managing VMs, as containers are designed to be lightweight and fast-moving.
 Why are containers light weight ?
 Containers are lightweight because they share the host operating system's kernel, include only essential components, utilize efficient resource management, employ a layered filesystem for image construction, and offer quick start/stop capabilities. These characteristics result in faster deployment, efficient resource utilization, and rapid scaling.
-Files and Folders in containers base images
- /bin: contains binary executable files, such as the ls, cp, and ps commands.
-/sbin: contains system binary executable files, such as the init and shutdown commands.
-/etc: contains configuration files for various system services.
-/lib: contains library files that are used by the binary executables.
- /usr: contains user-related files and utilities, such as applications, libraries, and documentation.
- /var: contains variable data, such as log files, spool files, and temporary files.
- /root: is the home directory of the root user.
-Files and Folders that containers use from host operating system
-The host's file system: Docker containers can access the host file system using bind mounts, which allow the container to read and write ## files in the host file system.
+# Files and Folders in containers base images
+ /bin: contains binary executable files, such as the ls, cp, and ps commands.\
+ /sbin: contains system binary executable files, such as the init and shutdown commands.\
+/etc: contains configuration files for various system services.\
+/lib: contains library files that are used by the binary executables.\
+ /usr: contains user-related files and utilities, such as applications, libraries, and documentation.\
+ /var: contains variable data, such as log files, spool files, and temporary files.\
+ /root: is the home directory of the root user.\
+Files and Folders that containers use from host operating system\
+The host's file system: Docker containers can access the host file system using bind mounts, which allow the container to read and write
+# files in the host file system.
 Networking stack: The host's networking stack is used to provide network connectivity to the container. Docker containers can be connected to the host's network directly or through a virtual network.
 System calls: The host's kernel handles system calls from the container, which is how the container accesses the host's resources, such as CPU, memory, and I/O.
 Namespaces: Docker containers use Linux namespaces to create isolated environments for the container's processes. Namespaces provide isolation for resources such as the file system, process ID, and network.
