@@ -1,0 +1,42 @@
+File and Directory Management:
+
+pwd: Print Working Directory - Shows the current directory you're in.
+ls: List - Lists files and directories in the current directory.
+cd: Change Directory - Navigates the file system by changing directories.
+mkdir: Make Directory - Creates a new directory.
+cp: Copy - Copies files and directories.
+mv: Move - Moves or renames files and directories.
+rm: Remove - Deletes files and directories (use with caution!).
+Permissions and Ownership:
+
+chown: Change Owner - Changes the owner of a file or directory.
+chmod: Change Mode - Modifies file permissions (read, write, execute) for users, groups, and others.
+Process Management:
+
+ps: Process Status - Lists running processes.
+top: Shows process activity in real-time.
+kill: Terminates a process.
+Text Manipulation and Searching:
+
+cat: Concatenate - Displays the contents of a file.
+grep: Global Regular Expression Print - Searches for patterns within text files.
+sed: Stream Editor - Filters and modifies text content.
+awk: Pattern Scanning and Processing Language - Manipulates text data based on patterns.
+Package Management:
+
+apt (Debian/Ubuntu): Advanced Package Tool - Installs, updates, and removes software packages.
+yum (Red Hat/CentOS): Yellowdog Update Manager - Similar to apt for Red Hat-based distributions.
+System Administration:
+
+free: Displays information about free and used memory.
+df: Disk Free - Shows disk usage for mounted file systems.
+netstat: Network Statistics - Displays network connections and routing information.
+ping: Network diagnostics tool to check connectivity to a host.
+ssh: Secure Shell - Establishes a secure remote connection to another server.
+Version Control (often used with Git):
+
+git clone: Clones a Git repository from a remote server.
+git status: Shows the current status of the working directory.
+git add: Adds changes to the staging area for version control.
+git commit: Creates a commit with a message describing the changes.
+git push: Pushes committed changes to a remote repository.
