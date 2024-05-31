@@ -1,1 +1,17 @@
 
+For installing any plugin, After jenkins login we go to manage jenkins section and then plugin.
+Here we can add, remove, disable , enable, update the plugin
+
+
+For User Management on jenkins, we go to manage jenkins section then user.
+Here we can add/delete/ modify the users.
+
+
+When we creating any job on jenkins 
+- in backend job is created at /var/lib/jenkis/job and all related data store in /var/lib/jenkins/workspace.
+
+When we delete the job on jinkins-
+-in backend job is deleted from /var/lib/jenkins/job but data is not deleted from /var/lib/junkis/workspace.
+
+
+
