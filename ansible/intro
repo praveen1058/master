@@ -1,0 +1,56 @@
+What is Ansible ?
+Ansible is Open source automation tool, used for automate IT task like configuration management , 
+application deployment, intra-service orchestrationand provisioning.
+
+why  Ansible ?
+Ansible is Simple.
+Ansible is Powerful.
+Ansible is work on agentless. 
+it manage - linux, unix, mac, network device.
+free and open source
+
+Automation using Shell Script vs Ansible
+in shell script all tasks run one by one if error occur then also
+if shell script run bymistake then its run all task again that are alredy done.
+
+
+Control Node- that machine where we manage all other systems.
+Managed host- that machines that are manged by control host.
+inventory- a test file on control node , where information are saved of managed host(ip/,homstname)
+
+Ansible configuration file- where we define how to connect managed host- like user, password, sudo power.
+Playbook- here we define task in module in yml.
+module - small piece of code.
+
+Strenth of Ansible -
+cross platform support
+human readable automation
+support dynamic inventory
+perfect desciption of application
+Easy to manage with version control
+
+
+Ansible use cases-
+configuration management
+appliction deployment
+provisioning
+continius delivery
+security compliance
+orchestration
+
+Requirement for installation
+Control Node---should be Linux or Unix, python2(2.7 or later) or python3(3.5 or later)
+
+Managed Host- can be linux, window,n/w devices
+python2(2.7 or later) or python3(3.5 or later
+
+installation- 
+first of all configure EPEL repo
+then 
+yum install -y ansible*
+
+
+
+
+
+
