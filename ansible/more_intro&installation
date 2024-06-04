@@ -1,0 +1,29 @@
+Inventory ??
+A inventory define a collection of hosts that ansible will manage. These host cann assigned to group. group can contain child group, and hosts can be members of multiple group.
+
+There are two types of inventory- static and dynamic
+
+Building an inventory-
+default location - /etc/ansible/hosts
+
+To managed host in better way , create directory as the name of project and create ansible.cfg, hosts for seprate projects.
+
+like mkdir project1 and then touch ansible.cfg hosts.
+mkdir project2 and then touch ansible.cfg hosts.
+
+$ ansible --list-host all -i <custom inventory location>
+$ ansible --list-host  production
+
+
+command to check hosts in inventory
+$ ansible --list-hosts all
+
+Before doing the any task , first we create one local user to all managed host with sudo permission and nopasswd
+$ sudo useradd techuser
+$ Sudo vim /etc/sudoers and add techuser ALL=(ALL)  NOPASSWD:ALL
+
+create ssh key on control node and copy to all managed host to connect keybased authentication.
+$ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa
+$ssh-copy-id -i ~/.ssh/id_rsa.pub ec2-user@<Instance_B_IP>
+
+
