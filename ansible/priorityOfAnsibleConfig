@@ -1,0 +1,55 @@
+Priority of Ansible Configuration-
+
+There are total 4 priority-
+1. Env Variable (Ansible_config)
+2. Current working Directory
+3. Home directory--   .ansible.cfg
+4. Default config file.
+
+Env varible is highrest priority . For this we define varible in .bashrc file in your home directory
+like--   ANSIBLE_CONFIG= /root/ansible/project/ansible.cfg
+
+
+Adhoc command-
+Adhoc commands are command which can be run individually to perform quick task. these commands are one time usage.
+
+syntax of adhoc command
+#ansible [host/group] -m [module name] -a [argument]
+
+intro about module-
+
+Module are small peace of code which is used to perform your tasks. These module written in python, powershell or any other laguage.
+
+command for list modules-
+# ansible-doc -l
+command for details about particuler module
+# ansible-doc modulename
+# ansible-doc user
+
+
+some popular useful module-
+user
+group
+yum
+file
+copy
+yum_repository
+reboot
+
+Running Adhoc command-
+creating file
+#ansible prod -m file -a "path=/praveen.txt state=touch"
+
+creting users
+# ansible all -m user -a "name=praveen state=present"
+
+install package-
+#ansible production -m yum -a "name=httpd state=present"
+
+command
+# ansible all -m command -a "rpm -q ansible"
+
+
+
+
+
