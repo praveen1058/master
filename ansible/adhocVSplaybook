@@ -1,0 +1,46 @@
+Adhoc command vs Playbook--
+ad hoc commands can run single, simple task against a set of targeted hosts as one-time command.
+But real power of ansible is ansible playbook.
+Playbook is used to run complex and manual administrative task against a set of targeted hosts into an easily repeatable routine with successful outcome.
+
+What is ansible play and playbook ?
+A play is an ordered set of tasks that is run against hosts selected from your inventory.
+
+A playbook is a text file that contains a list of one or more plays to run in order. A playbook is a text file written in YAML format and is normally saved with the extension yml.
+
+
+
+format of playbook-
+
+---
+  - name: create user on all machine
+    hosts: all
+    tasks:
+            -name: create tech user
+            user:
+                    name: tech
+                    state: present
+
+...
+
+check synax of play book -
+$ ansible-playbook users.yml  --syntax-check
+
+command for run playbook-
+$ ansible-playbook users.yml
+
+dry run 
+$ ansible-book -C users.yml
+
+
+Remote user and priviliged escalation -
+we can overwrite user and priviliged of ansible.cfg in playbook by define 
+remote_user: tech
+become: yes
+
+in this case user must be availbale on remote machine with sudo permission
+
+
+
+
+
